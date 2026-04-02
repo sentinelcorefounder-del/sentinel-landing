@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "ops.usesentinelhealth.com"
+        }
+      ],
+      "destination": "https://baserow.io/dashboard/408651",
+      "permanent": false
+    }
+  ]
+}
