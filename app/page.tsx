@@ -4,19 +4,19 @@ export default function Home() {
   const links = {
     hospitalPortal: "https://clinic.usesentinelhealth.com",
     clinicPortal: "https://clinic.usesentinelhealth.com",
-    backendApi: "https://api.usesentinelhealth.com",
     opsWorkspace: "https://ops.usesentinelhealth.com",
-    selfReferralForm: "https://baserow.io/form/bUn_c-54L5pFFNz8fBsliDXoLPQwaYKOCIn4Qyi_Rx4",
+    backendApi: "https://api.usesentinelhealth.com",
+    selfReferralForm: "https://baserow.io/form/REPLACE_WITH_SELF_REFERRAL_FORM_LINK",
   };
 
   const pillars = [
     {
       title: "Hospital Referral Intake",
-      text: "Partner hospitals log in to submit referrals and track progress through a secure Sentinel portal.",
+      text: "Partner hospitals sign in to submit diabetic eye screening referrals and track progress through Sentinel.",
     },
     {
       title: "Operational Coordination",
-      text: "Sentinel Ops manages intake, assignment, tracking, and workflow visibility across the pathway.",
+      text: "Sentinel Ops manages routing, assignment, and workflow visibility across the referral pathway.",
     },
     {
       title: "Clinic Delivery",
@@ -24,25 +24,23 @@ export default function Home() {
     },
   ];
 
-  const benefits = [
-    "Built specifically for diabetic eye screening referral pathways",
-    "Clear separation between hospital, operations, and clinic workflows",
-    "Simple, secure access for each user type",
-    "Supports service scale, oversight, and continuity of care",
-  ];
-
   const workflow = [
     "Hospital submits referral in Sentinel",
     "Sentinel Ops reviews and routes the referral",
     "Clinic is matched and patient is assigned",
-    "Clinic performs screening and completes report",
+    "Clinic completes screening and report",
     "Hospital tracks progress and receives completed outcome",
   ];
 
-  return (
-    <main className="min-h-screen bg-slate-50 text-slate-800">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(79,70,229,0.07),transparent_35%),radial-gradient(circle_at_85%_15%,rgba(14,165,233,0.06),transparent_25%),linear-gradient(to_bottom,#fbfbfe,#f4f6fb)]" />
+  const benefits = [
+    "Built for diabetic eye screening referral pathways",
+    "Clear separation between hospital, operations, and clinic workflows",
+    "Simple, role-based access for each user type",
+    "Supports coordination, visibility, and service scale-up",
+  ];
 
+  return (
+    <main className="min-h-screen text-slate-800">
       <div className="mx-auto max-w-7xl px-6 py-8 lg:px-8">
         <header className="flex flex-col gap-4 rounded-[28px] border border-white/70 bg-white/85 p-5 shadow-[0_10px_40px_rgba(15,23,42,0.06)] backdrop-blur md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-4">
