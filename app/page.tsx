@@ -20,7 +20,11 @@ export default function Home() {
     },
     {
       title: "Clinic Delivery",
-      text: "Clinics receive assigned patients only, supporting secure screening encounters, reporting, and follow-up.",
+      text: "Clinics receive assigned patients only, supporting secure screening encounters, reporting, follow-up, and AI-assisted screening support.",
+    },
+    {
+      title: "AI-Assisted Screening Support",
+      text: "Sentinel supports retinal image review with AI-assisted observations for diabetic retinopathy referral risk, helping clinicians prioritise review while keeping final decisions with qualified eye care professionals.",
     },
   ];
 
@@ -28,12 +32,15 @@ export default function Home() {
     "Hospital submits referral in Sentinel",
     "Sentinel Ops reviews and routes the referral",
     "Clinic is matched and patient is assigned",
-    "Clinic completes screening and report",
+    "Clinic uploads retinal images and completes screening",
+    "AI-assisted screening support helps flag images for clinician review",
+    "Clinic completes report and confirms outcome",
     "Hospital tracks progress and receives completed outcome",
   ];
 
   const benefits = [
     "Built for diabetic eye screening referral pathways",
+    "AI-assisted retinal image screening support for clinician review",
     "Clear separation between hospital, operations, and clinic workflows",
     "Simple, role-based access for each user type",
     "Supports coordination, visibility, and service scale-up",
@@ -85,7 +92,7 @@ export default function Home() {
         <section className="grid gap-10 py-16 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
           <div>
             <div className="inline-flex items-center rounded-full border border-indigo-100 bg-indigo-50 px-4 py-1.5 text-sm text-indigo-700">
-              Connected referral management for hospitals, operations teams, and clinics
+              Connected referral management with AI-assisted screening support
             </div>
 
             <h1 className="mt-6 max-w-4xl text-5xl font-semibold leading-tight tracking-tight text-slate-900 sm:text-6xl">
@@ -94,9 +101,9 @@ export default function Home() {
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
               Sentinel connects hospital referral intake, operational routing,
-              and clinic delivery into one structured workflow, helping teams
-              move patients through screening pathways with more visibility,
-              coordination, and trust.
+              clinic delivery, and AI-assisted retinal image screening support
+              into one structured workflow, helping teams move patients through
+              screening pathways with more visibility, coordination, and trust.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -128,12 +135,13 @@ export default function Home() {
 
             <div className="mt-8 rounded-[24px] border border-amber-200 bg-amber-50 p-5">
               <p className="text-sm font-semibold text-amber-800">
-                New hospital or clinic?
+                AI-assisted screening support
               </p>
               <p className="mt-2 text-sm leading-7 text-amber-900/90">
-                Access to Sentinel is only available to onboarded partner hospitals
-                and clinics. If your organization is new and needs access, please
-                contact Sentinel for onboarding before attempting to sign in.
+                Sentinel may use AI-assisted retinal image observations to support
+                diabetic retinopathy referral risk review. AI output is intended
+                for research and decision support only and must not replace
+                clinical assessment by a qualified eye care professional.
               </p>
             </div>
 
@@ -147,8 +155,8 @@ export default function Home() {
                 <div className="mt-1 text-sm text-slate-500">Connected pathway</div>
               </div>
               <div className="rounded-[24px] border border-white/80 bg-white/80 p-5 shadow-[0_8px_24px_rgba(15,23,42,0.04)]">
-                <div className="text-3xl font-semibold text-indigo-600">100%</div>
-                <div className="mt-1 text-sm text-slate-500">Role-based access</div>
+                <div className="text-3xl font-semibold text-indigo-600">AI</div>
+                <div className="mt-1 text-sm text-slate-500">Assisted screening support</div>
               </div>
             </div>
           </div>
@@ -180,7 +188,7 @@ export default function Home() {
         </section>
 
         <section className="py-4">
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="grid gap-6 lg:grid-cols-4">
             {pillars.map((pillar) => (
               <div
                 key={pillar.title}
@@ -211,8 +219,9 @@ export default function Home() {
             <p className="mt-4 text-base leading-8 text-slate-600">
               Sentinel is designed to reduce fragmentation across the referral
               pathway. It gives hospitals, operations teams, and clinics a
-              cleaner structure for submitting, routing, tracking, and completing
-              diabetic eye screening referrals.
+              cleaner structure for submitting, routing, tracking, completing,
+              and reviewing diabetic eye screening referrals with AI-assisted
+              support where appropriate.
             </p>
 
             <div className="mt-6 space-y-3">
@@ -264,7 +273,8 @@ export default function Home() {
                   Clinic Sign In
                 </div>
                 <div className="mt-1 text-sm text-slate-600">
-                  For onboarded clinics managing assigned patients and reports
+                  For onboarded clinics managing assigned patients, retinal image
+                  uploads, AI-assisted review support, and reports
                 </div>
                 <div className="mt-3 text-xs text-slate-400">
                   {links.clinicPortal}
@@ -319,6 +329,9 @@ export default function Home() {
             <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-white/85">
               Sign in through the appropriate portal if your organization has
               already been onboarded, or contact Sentinel to begin onboarding.
+              AI-assisted screening support may be used to help clinicians review
+              retinal images, but final clinical assessment remains with qualified
+              eye care professionals.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
