@@ -5,7 +5,7 @@ export default function Home() {
   const links = {
     hospitalPortal: "https://clinic.usesentinelhealth.com/login",
     clinicPortal: "https://clinic.usesentinelhealth.com/login",
-    opsWorkspace: "https://ops.usesentinelhealth.com/login",
+    opsWorkspace: "https://clinic.usesentinelhealth.com/login",
     selfReferralForm: "/self-referral",
   };
 
